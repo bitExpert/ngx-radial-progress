@@ -1,19 +1,26 @@
 radial-progress {
-  display: block;
 
-  .radial-progress {
-
-    &--text {
+  .style {
+    &--1 {
+      .radial-progress {
+        &--text {
+          position: absolute;
+          width: 100%;
+          top: 80px;
+          text-align: center;
+          font-family: Arial;
+          font-size: 30px;
+          color: grey;
+        }
+      }
     }
 
-    &--percent-count {
+    &--2 {
+
     }
 
-    &--title {
-    }
+    &--2 {
 
-    &--circle {
-      line-height: 0;
     }
   }
 }

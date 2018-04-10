@@ -1,11 +1,82 @@
-<radial-progress [percent]="45"
+<radial-progress [percent]="95"
+                 [addClass]="'style--1'"
                  [circleSize]="200"
-                 [strokeWidth]="1"
-                 [clockwise]="false"
-                 [animation]="true"
-                 [title]="'title'"
-                 [strokeLinecap]="'butt'"
+                 [strokeSteps]="[{
+                    strokeColor: 'red',
+                    strokeStep: 25
+                 }, {
+                    strokeColor: '#FF0',
+                    strokeStep: 50
+                 }, {
+                    strokeColor: 'rgb(0, 0, 255)',
+                    strokeStep: 75
+                 }, {
+                    strokeColor: 'rgba(0, 255, 255, .4)',
+                    strokeStep: 100
+                 }
+                 ]"
 >
 </radial-progress>
-<radial-progress>
+<radial-progress [percent]="60"
+                 [addClass]="'style--1'"
+                 [circleSize]="200"
+                 [strokeSteps]="[{
+                    strokeColor: 'red',
+                    strokeStep: 25
+                 }, {
+                    strokeColor: '#FF0',
+                    strokeStep: 50
+                 }, {
+                    strokeColor: 'rgb(0, 0, 255)',
+                    strokeStep: 75
+                 }, {
+                    strokeColor: 'rgba(0, 255, 255, .4)',
+                    strokeStep: 100
+                 }
+                 ]"
+>
+</radial-progress>
+<radial-progress [percent]="40"
+                 [addClass]="'style--1'"
+                 [circleSize]="200"
+                 [strokeSteps]="[{
+                    strokeColor: 'red',
+                    strokeStep: 25
+                 }, {
+                    strokeColor: '#FF0',
+                    strokeStep: 50
+                 }, {
+                    strokeColor: 'rgb(0, 0, 255)',
+                    strokeStep: 75
+                 }, {
+                    strokeColor: 'rgba(0, 255, 255, .4)',
+                    strokeStep: 100
+                 }
+                 ]"
+>
+</radial-progress>
+<radial-progress [percent]="25"
+                 [addClass]="'style--1'"
+                 [circleSize]="200"
+                 [strokeSteps]="[{
+                    strokeColor: 'red',
+                    strokeStep: 25
+                 }, {
+                    strokeColor: '#FF0',
+                    strokeStep: 50
+                 }, {
+                    strokeColor: 'rgb(0, 0, 255)',
+                    strokeStep: 75
+                 }, {
+                    strokeColor: 'rgba(0, 255, 255, .4)',
+                    strokeStep: 100
+                 }
+                 ]"
+>
+</radial-progress>
+<radial-progress
+  [addClass]="'style--2'"
+  [circleSize]="900"
+  [fill]="'blue'"
+>
 </radial-progress>
