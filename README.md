@@ -91,9 +91,9 @@ will result in something like this
 ![alt text](./src/assets/strokeStepsExample1.png "strokeSteps example 1")
 depending on the given percentage. That means:
 - color = `red` for percentage interval between 0 - 24
-- color = `#FF0' for percentage interval between 25 - 49
-- color = `rgb(0, 0, 255)' for percentage interval between 50 - 74
-- color = `rgba(0, 255, 255, .4)' for percentage interval between 75 - 100
+- color = `#FF0` for percentage interval between 25 - 49
+- color = `rgb(0, 0, 255)` for percentage interval between 50 - 74
+- color = `rgba(0, 255, 255, .4)` for percentage interval between 75 - 100
 
 **NOTE**: If you want only one single color, define strokeSteps like this:
 ```xml
