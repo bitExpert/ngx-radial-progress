@@ -129,7 +129,10 @@ export class RadialProgressComponent implements OnInit {
       this.negate = -1;
     }
 
+    this.strokeColorActive = this.strokeSteps[0].strokeColor;
+
     // check how far circle progress gets
+    console.log(this.strokeSteps);
     this.strokeSteps.forEach(function (ele, i) {
       if (self.percent == 100) {
         self.circleProgressSteps = self.strokeSteps.length;

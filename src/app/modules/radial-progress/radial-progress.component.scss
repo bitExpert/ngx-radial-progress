@@ -6,21 +6,75 @@ radial-progress {
         &--text {
           position: absolute;
           width: 100%;
-          top: 80px;
+          top: 30px;
           text-align: center;
           font-family: Arial;
-          font-size: 30px;
+          font-size: 25px;
           color: grey;
         }
       }
     }
 
     &--2 {
-
+      .radial-progress {
+        &--text {
+          position: absolute;
+          width: 100%;
+          top: 90px;
+          text-align: center;
+          font-family: Arial;
+          font-size: 40px;
+          color: green;
+        }
+      }
     }
 
-    &--2 {
+    &--3 {
+      .radial-progress {
+        &--text {
+          position: absolute;
+          width: 100%;
+          top: 40px;
+          text-align: center;
+          font-family: Arial;
+          font-size: 30px;
+          color: orange;
+        }
+      }
+    }
 
+    &--4 {
+      .radial-progress {
+        &--text {
+          position: absolute;
+          width: 100%;
+          top: 40px;
+          text-align: center;
+          font-family: Arial;
+          font-size: 80px;
+          color: white;
+          text-shadow: 0 0 10px white;
+        }
+
+        &--title {
+          font-size: 24px;
+          text-shadow: none;
+        }
+      }
+    }
+
+    &--5 {
+      .radial-progress {
+        &--text {
+          position: absolute;
+          width: 100%;
+          top: 50px;
+          text-align: center;
+          font-family: Arial;
+          font-size: 40px;
+          color: #77a721;
+        }
+      }
     }
   }
 }

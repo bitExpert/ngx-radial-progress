@@ -5,7 +5,7 @@
       {{title}}
     </div>
     <div *ngIf="showPercent" class="radial-progress--percent-count">
-      {{percentCount}}<span *ngIf="percentUnit!==''">{{percentUnit}}</span>
+      {{percentCount}}<span *ngIf="percentUnit!==''" class="radial-progress--percent-count-unit">{{percentUnit}}</span>
     </div>
   </div>
   <div class="radial-progress--circle" (window:resize)="onResize($event)">

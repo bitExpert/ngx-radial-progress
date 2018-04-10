@@ -83,8 +83,7 @@ For example
      }, {
         strokeColor: 'rgba(0, 255, 255, .4)',
         strokeStep: 100
-     }
-     ]"
+     }]"
    ></radial-progress>
 ```
 will result in something like this
@@ -101,7 +100,6 @@ depending on the given percentage. That means:
      [strokeSteps]="[{
         strokeColor: 'red',
         strokeStep: 100
-     }
-     ]"
+     }]"
    ></radial-progress>
 ```
