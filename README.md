@@ -21,8 +21,7 @@ import {RadialProgressModule} from "angular-radial-progress";
   ],
   imports: [
     BrowserModule,
-    // Specify ng-circle-progress as an import
-    RadialProgressModule
+    RadialProgressModule // Import RadialProgressModule here
 
   ],
   providers: [],
@@ -33,7 +32,6 @@ export class AppModule {}
 
 Use it in your Angular application like:
 ```xml
-<!-- You can now use it in app.component.html -->
 <radial-progress
   [percent]="85"
   [radius]="100"
