@@ -1,27 +1,62 @@
-# AngularRadialProgress
+# Angular Radial Progress
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.4.
+A simple radial progress component for Angular. Responsive and highly customizable. 
 
-## Development server
+## Installation
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run 
+```bash
+npm i angular-radial-progress --save-dev
+``` 
+to install.
 
-## Code scaffolding
+Import in your Angular `AppModule` like:
+```typescript
+// Import radial-progress
+import {RadialProgressModule} from "angular-radial-progress";
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    // Specify ng-circle-progress as an import
+    RadialProgressModule
 
-## Build
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Use it in your Angular application like:
+```xml
+<!-- You can now use it in app.component.html -->
+<radial-progress
+  [percent]="85"
+  [radius]="100"
+></radial-progress>
+```
 
-## Running unit tests
+## Options
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Option | Type | Default | Description
+--- | --- | --- | ---
+addClass | `string` | '' | add custom class(es) to componentpercent | `number` | 0 | number of percentage
+animation | `boolean` | true | whether to animate drawing of outer circle or not
+circleSize | `number` | 0 | size of circle. If `0` the circle is scaled relative to parent
+clockwise | `boolean` |  false | whether to rotate clockwise or counter-clockwise
+delay | `number` | 0 | delay drawing of outer circle (in ms)
+percent | `number` | 50 | number of percent
+percentUnit | `string` | '%' | unit after percentage counter
+showPercent | `boolean` | true | whether to show (percentage) counter or not
+strokeBackground | `string` | '#efefef' | color of inner stroke. Pass any color values you want
+strokeLinecap | `string` | 'butt' | stroke linecap of outer circle. Possible values: 'butt', 'round', 'square', 'inherit'
+strokeSteps | `array` | [{strokeColor: 'red',strokeStep: 10}, {strokeColor: 'green',strokeStep: 100}] | array with json object(s). Only relevant if `animation == true`
+strokeSteps.strokeColor | `string` | ['red', 'green'] | color of outer circle until current step. Pass any color values you want. Only relevant if `animation == true`
+strokeSteps.strokeStep | `number` | [10, 100] | defines color to given percentage value. Make sure to define `strokeColor` for `strokeStep == 100`. Only relevant if `animation == true`
+strokeWidth | `number` | 20 | width of circles stroke
+title | `string` | '' | text to display. Leave empty to hide
+transitionDuration | `number` | 5000 | time to draw outer circle to 100% (in ms). Only relevant if `animation == true`

@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import {RadialProgressModule} from "./modules/radial-progress/radial-progress.module";
 
 
 @NgModule({
@@ -10,7 +11,8 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    RadialProgressModule
   ],
   providers: [],
   bootstrap: [AppComponent]
