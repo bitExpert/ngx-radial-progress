@@ -6,14 +6,14 @@ A simple radial progress component for Angular. Responsive and highly customizab
 
 Run 
 ```bash
-npm i angular-radial-progress --save-dev
+npm i ng2-radial-progress --save-dev
 ``` 
 to install.
 
 Import in your Angular `AppModule` like:
 ```typescript
 // Import radial-progress
-import {RadialProgressModule} from "angular-radial-progress";
+import {RadialProgressModule} from "ng2-radial-progress";
 
 @NgModule({
   declarations: [
