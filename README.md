@@ -112,4 +112,4 @@ Thank you [BrowserStack](https://www.browserstack.com/) for prodiving us with th
 
 ## License
 
-ng2-combobox is released under the Apache 2.0 license.
+ng2-radial-progress is released under the Apache 2.0 license.
