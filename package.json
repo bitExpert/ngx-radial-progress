@@ -1,7 +1,7 @@
 {
-  "name": "angular-radial-progress",
-  "version": "0.0.1",
-  "license": "MIT",
+  "name": "ng2-radial-progress",
+  "version": "0.0.2",
+  "license": "Apache-2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",

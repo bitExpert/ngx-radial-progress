@@ -103,3 +103,13 @@ depending on the given percentage. That means:
      }]"
    ></radial-progress>
 ```
+
+## Thank you
+
+![BrowserStack](./src/assets/browserstack.png "BrowserStack")
+
+Thank you [BrowserStack](https://www.browserstack.com/) for prodiving us with the infrastructure needed to test ng2-radial-progress.
+
+## License
+
+ng2-combobox is released under the Apache 2.0 license.
