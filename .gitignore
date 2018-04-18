@@ -34,7 +34,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-.ng_pkg_build
+/.ng_pkg_build
 dist.tgz
 
 # e2e
