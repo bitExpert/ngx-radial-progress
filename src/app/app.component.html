@@ -1,69 +1,20 @@
-<div style="display: flex; justify-content: space-evenly">
-  <radial-progress [percent]="20"
-                   [addClass]="'style--1'"
-                   [circleSize]="90"
-                   [strokeSteps]="[{
-                    strokeColor: 'red',
-                    strokeStep: 25
-                 }, {
-                    strokeColor: '#FF0',
-                    strokeStep: 50
-                 }, {
-                    strokeColor: 'rgb(0, 0, 255)',
-                    strokeStep: 75
-                 }, {
-                    strokeColor: 'rgba(0, 0, 0, .4)',
-                    strokeStep: 100
-                 }
-                 ]"
-  >
-  </radial-progress>
-  <radial-progress [percent]="55"
-                   [addClass]="'style--1'"
-                   [circleSize]="90"
-                   [strokeSteps]="[{
-                    strokeColor: 'red',
-                    strokeStep: 25
-                 }, {
-                    strokeColor: '#FF0',
-                    strokeStep: 50
-                 }, {
-                    strokeColor: 'rgb(0, 0, 255)',
-                    strokeStep: 75
-                 }, {
-                    strokeColor: 'rgba(0, 0, 0, .4)',
-                    strokeStep: 100
-                 }
-                 ]"
-  >
-  </radial-progress>
-  <radial-progress [percent]="95"
-                   [addClass]="'style--1'"
-                   [circleSize]="90"
-                   [strokeSteps]="[{
-                    strokeColor: 'red',
-                    strokeStep: 25
-                 }, {
-                    strokeColor: '#FF0',
-                    strokeStep: 50
-                 }, {
-                    strokeColor: 'rgb(0, 0, 255)',
-                    strokeStep: 75
-                 }, {
-                    strokeColor: 'rgba(0, 0, 0, .4)',
-                    strokeStep: 100
-                 }
-                 ]"
-  >
-  </radial-progress>
-</div>
-
-
-
-
-
-
-<div style="display: flex; justify-content: space-evenly">
+<style type="text/css">
+  body {
+    font-family:'Helvetica', 'Arial';
+  }
+  h1 {
+    font-family:'Helvetica', 'Arial';
+    text-align: center;
+    color: #3a4144;
+  }
+  .container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+  }
+</style>
+<h1>Different color per strokeStep</h1>
+<div class="container">
   <radial-progress [percent]="20"
                    [addClass]="'style--1'"
                    [circleSize]="200"
@@ -143,9 +94,8 @@
 </div>
 
 
-
-
-<div style="display: flex; justify-content: space-evenly">
+<h1>Rounded linecap</h1>
+<div class="container">
   <radial-progress
     [percent]="5"
     [addClass]="'style--2'"
@@ -153,7 +103,11 @@
     [strokeLinecap]="'round'"
     [strokeWidth]="30"
     [strokeWidthBackground]="30"
-    [strokeBackground]="'#efefef'"
+    [strokeBackground]="'#95c11f'"
+    [strokeSteps]="[{
+      strokeColor: '#ff7300',
+      strokeStep: 100
+    }]"
   >
   </radial-progress>
   <radial-progress
@@ -163,11 +117,18 @@
     [strokeLinecap]="'round'"
     [strokeWidth]="30"
     [strokeWidthBackground]="30"
-    [strokeBackground]="'#efefef'"
+    [strokeBackground]="'#e00079'"
+    [strokeSteps]="[{
+      strokeColor: '#ff7300',
+      strokeStep: 100
+    }]"
   >
   </radial-progress>
 </div>
-<div style="display: flex; justify-content: space-evenly">
+
+
+<h1>Clockwise with background</h1>
+<div class="container">
   <radial-progress
     [percent]="30"
     [addClass]="'style--3'"
@@ -176,11 +137,11 @@
     [strokeLinecap]="'round'"
     [strokeWidth]="10"
     [strokeWidthBackground]="10"
-    [strokeBackground]="'#666'"
+    [strokeBackground]="'#95c11f'"
     [clockwise]="true"
-    [fillBackground]="'#333'"
+    [fillBackground]="'#3a4144'"
     [strokeSteps]="[{
-                    strokeColor: 'orange',
+                    strokeColor: '#ff7300',
                     strokeStep: 100
                  }]"
   >
@@ -193,17 +154,19 @@
     [strokeLinecap]="'round'"
     [strokeWidth]="10"
     [strokeWidthBackground]="10"
-    [strokeBackground]="'#666'"
+    [strokeBackground]="'#00bee8'"
     [clockwise]="true"
-    [fillBackground]="'#333'"
+    [fillBackground]="'#3a4144'"
     [strokeSteps]="[{
-                    strokeColor: 'orange',
+                    strokeColor: '#ff7300',
                     strokeStep: 100
                  }]"
   >
   </radial-progress>
 </div>
-<div style="display: flex; justify-content: space-evenly">
+
+<h1>Pie chart clockwise</h1>
+<div class="container">
   <radial-progress
     [percent]="14"
     [title]="'pie chart'"
@@ -211,16 +174,16 @@
     [circleSize]="200"
     [strokeWidth]="100"
     [strokeWidthBackground]="100"
-    [strokeBackground]="'#666'"
+    [strokeBackground]="'#3a4144'"
     [clockwise]="true"
     [strokeSteps]="[{
-                    strokeColor: '#444',
+                    strokeColor: '#95c11f',
                     strokeStep: 33
                  }, {
-                    strokeColor: '#333',
+                    strokeColor: '#00bee8',
                     strokeStep: 66
                  }, {
-                    strokeColor: 'black',
+                    strokeColor: '#ff7300',
                     strokeStep: 100
                  }]"
   >
@@ -232,16 +195,16 @@
     [circleSize]="200"
     [strokeWidth]="100"
     [strokeWidthBackground]="100"
-    [strokeBackground]="'#666'"
+    [strokeBackground]="'#3a4144'"
     [clockwise]="true"
     [strokeSteps]="[{
-                    strokeColor: '#444',
+                    strokeColor: '#95c11f',
                     strokeStep: 33
                  }, {
-                    strokeColor: '#333',
+                    strokeColor: '#00bee8',
                     strokeStep: 66
                  }, {
-                    strokeColor: 'black',
+                    strokeColor: '#ff7300',
                     strokeStep: 100
                  }]"
   >
@@ -253,37 +216,39 @@
     [circleSize]="200"
     [strokeWidth]="100"
     [strokeWidthBackground]="100"
-    [strokeBackground]="'#666'"
+    [strokeBackground]="'#3a4144'"
     [clockwise]="true"
     [strokeSteps]="[{
-                    strokeColor: '#444',
+                    strokeColor: '#95c11f',
                     strokeStep: 33
                  }, {
-                    strokeColor: '#333',
+                    strokeColor: '#00bee8',
                     strokeStep: 66
                  }, {
-                    strokeColor: 'black',
+                    strokeColor: '#ff7300',
                     strokeStep: 100
                  }]"
   >
   </radial-progress>
 </div>
-<div style="display: flex; justify-content: space-evenly">
+
+<h1>Overlapping stroke with transparency</h1>
+<div class="container">
   <radial-progress
     [percent]="13"
     [addClass]="'style--5'"
     [circleSize]="200"
     [strokeWidth]="30"
     [strokeWidthBackground]="30"
-    [fillBackground]="'darkcyan'"
+    [fillBackground]="'#3a4144'"
     [strokeSteps]="[{
-                    strokeColor: 'rgba(255, 0, 0, .5)',
+                    strokeColor: 'rgba(149, 193, 31, .5)',
                     strokeStep: 33
                  }, {
-                    strokeColor: 'rgba(0, 0, 255, .5)',
+                    strokeColor: 'rgba(0, 190, 232, .5)',
                     strokeStep: 66
                  }, {
-                    strokeColor: 'rgba(0, 255, 0, .5)',
+                    strokeColor: 'rgba(255, 115, 0, .5)',
                     strokeStep: 100
                  }]"
   >
@@ -294,15 +259,15 @@
     [circleSize]="200"
     [strokeWidth]="30"
     [strokeWidthBackground]="30"
-    [fillBackground]="'darkcyan'"
+    [fillBackground]="'#3a4144'"
     [strokeSteps]="[{
-                    strokeColor: 'rgba(255, 0, 0, .5)',
+                    strokeColor: 'rgba(149, 193, 31, .5)',
                     strokeStep: 33
                  }, {
-                    strokeColor: 'rgba(0, 0, 255, .5)',
+                    strokeColor: 'rgba(0, 190, 232, .5)',
                     strokeStep: 66
                  }, {
-                    strokeColor: 'rgba(0, 255, 0, .5)',
+                    strokeColor: 'rgba(255, 115, 0, .5)',
                     strokeStep: 100
                  }]"
   >
@@ -313,15 +278,15 @@
     [circleSize]="200"
     [strokeWidth]="30"
     [strokeWidthBackground]="30"
-    [fillBackground]="'darkcyan'"
+    [fillBackground]="'#3a4144'"
     [strokeSteps]="[{
-                    strokeColor: 'rgba(255, 0, 0, .5)',
+                    strokeColor: 'rgba(149, 193, 31, .5)',
                     strokeStep: 33
                  }, {
-                    strokeColor: 'rgba(0, 0, 255, .5)',
+                    strokeColor: 'rgba(0, 190, 232, .5)',
                     strokeStep: 66
                  }, {
-                    strokeColor: 'rgba(0, 255, 0, .5)',
+                    strokeColor: 'rgba(255, 115, 0, .5)',
                     strokeStep: 100
                  }]"
   >
