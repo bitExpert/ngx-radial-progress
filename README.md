@@ -77,10 +77,10 @@ For example
          strokeColor: '#ff7300',
          strokeStep: 50
       }, {
-         strokeColor: 'rgb(149,193,31)',
+         strokeColor: 'rgb(149, 193, 31)',
          strokeStep: 75
       }, {
-         strokeColor: 'rgb(58,65,68)',
+         strokeColor: 'rgb(58, 65, 68)',
          strokeStep: 100
       }]"
    ></radial-progress>
@@ -88,10 +88,10 @@ For example
 will result in something like this
 ![alt text](./src/assets/strokeStepsExample1.png "strokeSteps example 1")
 depending on the given percentage. That means:
-- color = `red` for percentage interval between 0 - 24
-- color = `#FF0` for percentage interval between 25 - 49
-- color = `rgb(0, 0, 255)` for percentage interval between 50 - 74
-- color = `rgba(0, 255, 255, .4)` for percentage interval between 75 - 100
+- color = `#e00079` for percentage interval between 0 - 24
+- color = `#ff7300` for percentage interval between 25 - 49
+- color = `rgb(149, 193, 31)` for percentage interval between 50 - 74
+- color = `rgb(58, 65, 68)` for percentage interval between 75 - 100
 
 **NOTE**: If you want only one single color, define strokeSteps like this:
 ```xml
