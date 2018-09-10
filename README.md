@@ -22,7 +22,6 @@ import {RadialProgressModule} from "ng2-radial-progress";
   imports: [
     BrowserModule,
     RadialProgressModule // Import RadialProgressModule here
-
   ],
   providers: [],
   bootstrap: [AppComponent]
@@ -72,18 +71,18 @@ For example
    <radial-progress
      [percent]="85"
      [strokeSteps]="[{
-        strokeColor: 'red',
-        strokeStep: 25
-     }, {
-        strokeColor: '#FF0',
-        strokeStep: 50
-     }, {
-        strokeColor: 'rgb(0, 0, 255)',
-        strokeStep: 75
-     }, {
-        strokeColor: 'rgba(0, 255, 255, .4)',
-        strokeStep: 100
-     }]"
+         strokeColor: '#e00079',
+         strokeStep: 25
+      }, {
+         strokeColor: '#ff7300',
+         strokeStep: 50
+      }, {
+         strokeColor: 'rgb(149,193,31)',
+         strokeStep: 75
+      }, {
+         strokeColor: 'rgb(58,65,68)',
+         strokeStep: 100
+      }]"
    ></radial-progress>
 ```
 will result in something like this
