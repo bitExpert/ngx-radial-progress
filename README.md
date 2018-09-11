@@ -4,16 +4,10 @@ A simple radial progress component for Angular. Responsive and highly customizab
 
 ## Installation
 
-Run 
-```bash
-npm i ng2-radial-progress --save-dev
-``` 
-to install.
-
 Import in your Angular `AppModule` like:
 ```typescript
 // Import radial-progress
-import {RadialProgressModule} from "ng2-radial-progress";
+import {RadialProgressModule} from "ngx-radial-progress";
 
 @NgModule({
   declarations: [
@@ -107,8 +101,8 @@ depending on the given percentage. That means:
 
 ![BrowserStack](./src/assets/browserstack.png "BrowserStack")
 
-Thank you [BrowserStack](https://www.browserstack.com/) for prodiving us with the infrastructure needed to test ng2-radial-progress.
+Thank you [BrowserStack](https://www.browserstack.com/) for prodiving us with the infrastructure needed to test ngx-radial-progress.
 
 ## License
 
-ng2-radial-progress is released under the Apache 2.0 license.
+ngx-radial-progress is released under the Apache 2.0 license.
